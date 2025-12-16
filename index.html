@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile</title>
+
+    <!-- Internal CSS (Bonus) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 1. Heading -->
+    <h1>Bemnet Tesfaye</h1>
+
+    <!-- 2. Short Bio -->
+    <p>
+        I am a Software Engineering student with a strong interest in web development,
+        cybersecurity, and modern technologies. I enjoy learning new skills and building
+        practical projects.
+    </p>
+
+    <!-- 3. Image -->
+    <img src="profile.jpg" alt="My Profile Picture">
+
+    <!-- 4. Contact Form -->
+    <form onsubmit="showMessage()">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+<!-- JavaScript (Bonus) -->
+<script>
+    function showMessage() {
+        alert("Thank you! Your message has been submitted.");
+    }
+</script>
+
+</body>
+</html>
